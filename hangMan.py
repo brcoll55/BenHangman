@@ -1,12 +1,13 @@
+from __future__ import print_function
 lives = 6
-word = ""
+word = "steve"
 letter = ""
 updatedSpaces= []
 
 def initialize():
     global word
     global updatedSpaces
-    word = "airport"
+    word = "steve"
     print("_ " * len(word))
     updatedSpaces = ("_ " * len(word))
     print("Try to guess the word within 6 tries")
@@ -34,10 +35,8 @@ def main():
     getLetter()
     #check()
     
-from __future__ import print_function
-updatedSpaces=['-','-','-','-','-']
+updatedSpaces=['-'] * 6
 word='steve'
-lives=5
 def check(letter):
     global lives
     global updatedSpaces
